@@ -216,9 +216,9 @@ function sense () {
         readPin2()
         basic.pause(1)
     }
-    state0 = calibration_value0 + threshold < reading0 / 0.8 / samples
-    state1 = calibration_value1 + threshold < reading1 / 0.8 / samples
-    state2 = calibration_value2 + threshold < reading2 / 0.8 / samples
+    state0 = calibration_value0 + threshold < reading0 / 1.1 / samples
+    state1 = calibration_value1 + threshold < reading1 / 1.1 / samples
+    state2 = calibration_value2 + threshold < reading2 / 1.1 / samples
 }
 /**
  * We will need to get a base reading of our pin values so that Microbit can detect waht the baseline reading of our sensor is without being touched
